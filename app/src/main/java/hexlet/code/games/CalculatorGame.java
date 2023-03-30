@@ -8,9 +8,10 @@ public final class CalculatorGame {
     public static final String[] OPERATORS = {"+", "-", "*"};
     public static final int MAX_NUMBER = 100;
     public static final String GAME_RULES = "What is the result of the expression?";
+    public static final int QUESTION_AND_ANSWER = 2;
 
     public static void start() {
-        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][QUESTION_AND_ANSWER];
 
         Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS; i++) {

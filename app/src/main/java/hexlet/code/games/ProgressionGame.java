@@ -10,9 +10,10 @@ public class ProgressionGame {
     public static final int MAX_STEP = 5;
     public static final int MAX_START_NUMBER = 20;
     public static final String GAME_RULES = "What number is missing in the progression?";
+    public static final int QUESTION_AND_ANSWER = 2;
 
     public static void start() {
-        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][QUESTION_AND_ANSWER];
 
         Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS; i++) {

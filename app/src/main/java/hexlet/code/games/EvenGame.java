@@ -7,9 +7,10 @@ import java.util.Random;
 public final class EvenGame {
     public static final String GAME_RULES = "Answer 'yes' if the number is even, otherwise answer 'no'.";
     public static final int MAX_NUMBER = 100;
+    public static final int QUESTION_AND_ANSWER = 2;
 
     public static void start() {
-        String[][] questionsAndAnswers = new String[3][2];
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][QUESTION_AND_ANSWER];
 
         for (int i = 0; i < Engine.ROUNDS; i++) {
             int number = new Random().nextInt(MAX_NUMBER) + 1;
