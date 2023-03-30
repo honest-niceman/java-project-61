@@ -7,28 +7,31 @@ public class Engine {
     public static final int ROUNDS = 3;
 
     public static void run(String[][] roundsData, String description) {
-        System.out.println(description);
-
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Welcome to the Brain Games!\nMay I have your name? ");
+        String username = scanner.nextLine();
+        System.out.println("Hello, " + username + "!");
+        System.out.println(description);
 
         for (int i = 0; i < ROUNDS; i++) {
             String question = roundsData[i][0];
             String rightAnswer = roundsData[i][1];
             System.out.println("Question: " + question);
 
-            String answer = scanner.next();
+            String answer = scanner.nextLine();
 
             if (answer.equals(roundsData[i][1])) {
                 System.out.println("Correct!");
             } else {
-                System.out.printf("'%s' is wrong answer ;(\nCorrect answer was '%s'.\nLet's try again!%n",
+                System.out.printf("'%s' is wrong answer ;(. Correct answer was '%s'.\nLet's try again, %s!%n",
                                   answer,
-                                  rightAnswer);
+                                  rightAnswer,
+                                  username);
                 return;
             }
         }
 
-        System.out.println("Congratulations!");
+        System.out.println("Congratulations, " + username + "!");
         scanner.close();
     }
 }
