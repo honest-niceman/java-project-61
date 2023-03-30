@@ -13,7 +13,7 @@ public final class CalculatorGame {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
 
         Random random = new Random();
-        for (var i = 0; i < Engine.ROUNDS; i++) {
+        for (int i = 0; i < Engine.ROUNDS; i++) {
             int firstNumber = random.nextInt(MAX_NUMBER) + 1;
             int secondNumber = random.nextInt(MAX_NUMBER) + 1;
             String operator = OPERATORS[random.nextInt(OPERATORS.length)];

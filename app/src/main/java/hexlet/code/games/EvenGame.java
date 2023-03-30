@@ -11,7 +11,7 @@ public final class EvenGame {
     public static void start() {
         String[][] questionsAndAnswers = new String[3][2];
 
-        for (var i = 0; i < Engine.ROUNDS; i++) {
+        for (int i = 0; i < Engine.ROUNDS; i++) {
             int number = new Random().nextInt(EVEN_GAME_MAX_NUMBER) + 1;
             String correctAnswer = isEven(number) ? "yes" : "no";
 
