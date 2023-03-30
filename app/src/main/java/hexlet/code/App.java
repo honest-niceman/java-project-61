@@ -1,6 +1,7 @@
 package hexlet.code;
 
 import hexlet.code.base.Cli;
+import hexlet.code.games.CalculatorGame;
 import hexlet.code.games.EvenGame;
 
 import java.util.Scanner;
@@ -13,13 +14,15 @@ public class App {
                 Please enter the game number and press Enter.
                 1 - Greet
                 2 - Even
+                3 - Calc
                 0 - Exit
                 Your choice:
                 """);
 
         switch (scanner.nextLine()) {
             case "1" -> Cli.greet();
-            case "2" -> EvenGame.run();
+            case "2" -> EvenGame.start();
+            case "3" -> CalculatorGame.start();
             case "0" -> scanner.close();
             default -> throw new Error("Unknown command :(");
         }
