@@ -25,7 +25,7 @@ public class ProgressionGame {
             var progressionItems = getProgression(startNumber, step, progressionLength);
 
             questionsAndAnswers[i][1] = progressionItems[questionIdx];
-            progressionItems[questionIdx] = "?";
+            progressionItems[questionIdx] = "..";
             questionsAndAnswers[i][0] = String.join(" ", progressionItems);
         }
 
