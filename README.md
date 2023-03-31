@@ -6,7 +6,7 @@
 
 Mind Games - a set of five console games. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again. Games:
 
-– Even. Define whether number is even or odd.
+- Even. Define whether number is even or odd.
 - Calculator. Evaluate arithmetic expressions.
 - GCD. Find the Greatest Common Divisor.
 - Progression. Search missing numbers in a sequence.
