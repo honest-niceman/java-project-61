@@ -1,5 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/honest-niceman/java-project-61/workflows/hexlet-check/badge.svg)](https://github.com/honest-niceman/java-project-61/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0c24d8411e180e280841/maintainability)](https://codeclimate.com/github/honest-niceman/java-project-61/maintainability)
 
 # Mind-Games
 
